@@ -21,8 +21,8 @@ paginate:
           <a href="{post.data.external_link ?: post.url}">{post.title}</a>
         </div>
         <div class="grid__item width-8-12 width-12-12-m byline-wrapper">
-          {#if author.containsKey('emailHash')}
-          <img class="headshot" src="https://www.gravatar.com/avatar/{author.emailHash}">
+          {#if author.containsKey('emailhash')}
+          <img class="headshot" src="https://www.gravatar.com/avatar/{author.emailhash}">
           {/if}
           <p class="byline">By <a href="{author.bio}">{author.name}</a>
             <br/>
